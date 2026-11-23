@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://sebxx66.github.io/FincaSope/sitemap.xml

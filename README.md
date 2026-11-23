@@ -45,7 +45,7 @@ Sitio web promocional para **Casa 6**, una finca en la Parcelación Palma Real (
 | **Botón flotante** | Acceso directo a WhatsApp desde cualquier parte de la página. |
 | **Galería y video** | 12 fotos reales y un recorrido en video vertical optimizado para carga rápida. |
 | **Responsive** | Diseño fluido pensado primero para celular. |
-| **SEO** | Título y descripción optimizados, datos estructurados `LodgingBusiness` (schema.org), `sitemap.xml` y `robots.txt`. |
+| **Privada para buscadores** | Marcada con `noindex`: no aparece en Google ni en otros buscadores; solo la ve quien recibe el link. |
 | **Vista previa al compartir** | Etiquetas Open Graph: al enviar el link por WhatsApp o redes aparece la foto de la piscina con el título. |
 | **Accesibilidad** | HTML semántico, textos alternativos en todas las imágenes, etiquetas en formularios y contraste AA. |
 | **Sin dependencias** | Un solo `index.html` con CSS y JavaScript nativos: nada que instalar ni compilar. |
@@ -80,7 +80,6 @@ FincaSope/
 ├── favicon-32.png
 ├── apple-touch-icon.png
 ├── robots.txt
-├── sitemap.xml
 ├── docs/screenshots/       # Capturas para este README
 └── .github/workflows/      # Despliegue automático a GitHub Pages
 ```
@@ -102,7 +101,9 @@ Cada `push` a `main` publica el sitio automáticamente en GitHub Pages mediante 
 
 Para activarlo la primera vez: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-> Si el sitio se mueve a un dominio propio, reemplaza `https://sebxx66.github.io/FincaSope` en `index.html`, `robots.txt` y `sitemap.xml`.
+> Si el sitio se mueve a un dominio propio, reemplaza `https://sebxx66.github.io/FincaSope` en `index.html`.
+>
+> Para que vuelva a aparecer en Google, borra las etiquetas `<meta name="robots">` y `<meta name="googlebot">` de `index.html`.
 
 ## Personalización
 
